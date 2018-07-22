@@ -4,7 +4,7 @@
 
 This is a Windows 98+ application for viewing your cursor scheme.
 
-![Preview Image](https://github.com/Richienb/cursor-scheme-previewer/raw/master/preview.png)
+![Preview Image](https://cdn.rawgit.com/Richienb/cursor-scheme-previewer/bf84176e/preview.png)
 
 # How do I use it?
 
