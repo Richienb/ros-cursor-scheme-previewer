@@ -2,7 +2,7 @@
 
 # What is it?
 
-This is a Windows 98+ application for viewing your cursor scheme.
+This is a .NET 2.0+ (Windows 98+) application for viewing your cursor scheme.
 
 ![Preview Image](https://cdn.rawgit.com/Richienb/cursor-scheme-previewer/bf84176e/preview.png)
 
