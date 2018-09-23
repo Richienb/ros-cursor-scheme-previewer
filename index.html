@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <meta name="description" content="ROS Cursor Scheme Previewier is a Material Design website which allows you to preview the cursors in your cursor scheme.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>ROS Cursor Scheme Previewer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-red.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+</head>
+
+<body>
+    <div class="demo-card-square mdl-card mdl-shadow--2dp center">
+        <header class="mdl-card__title">
+            <h2 class="mdl-card__title-text">ROS Cursor Scheme Previewer</h2>
+        </header>
+        <main>
+            <div class="mdl-card__supporting-text">
+                <p>Mouse over a cursor name to view your corresponding cursor.<span id="small-alert"> Your screen seems to be too small to support a mouse. But we could be wrong!</span></p>
+
+                <button class="mdl-button mdl-js-button mdl-js-button" style="cursor: alias">
+                    Alias
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: all-scroll">
+                    All Scroll
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: auto">
+                    Auto
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: cell">
+                    Cell
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: context-menu">
+                    Context Menu
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: col-resize">
+                    Column Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: copy">
+                    Copy
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: crosshair">
+                    Crosshair
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: default">
+                    Default
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: e-resize">
+                    East Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: ew-resize">
+                    East West Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: -webkit-grab; cursor: grab">
+                    Grab
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: -webkit-grabbing; cursor: grabbing">
+                    Grabbing
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: help">
+                    Help
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: move">
+                    Move
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: n-resize">
+                    North Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: ne-resize">
+                    North East Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: nesw-resize">
+                    North East South West Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: ns-resize">
+                    North South Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: nw-resize">
+                    North West Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: nwse-resize">
+                    North West South East Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: no-drop">
+                    No Drop
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: none">
+                    None
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: not-allowed">
+                    Not Allowed
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: pointer">
+                    Pointer
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: progress">
+                    Progress
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: row-resize">
+                    Row Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: s-resize">
+                    South Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: se-resize">
+                    South East Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: sw-resize">
+                    South West Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: text">
+                    Text
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: w-resize">
+                    West Resize
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: wait">
+                    Wait
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: zoom-in">
+                    Zoom In
+                </button>
+                <button class="mdl-button mdl-js-button" style="cursor: zoom-out">
+                    Zoom Out
+                </button>
+            </div>
+        </main>
+    </div>
+
+    </div>
+    <style>
+        html>body {
+            background: #5c6bc0;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+        }
+
+        body {
+            min-height: 100vh;
+            position: relative;
+            margin: 0;
+        }
+
+        .mdl-card {
+            width: 90vw;
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            transition: all .25s;
+        }
+
+        .center {
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .demo-card-square>.mdl-card__title {
+            background: #3f51b5;
+        }
+
+        .mdl-card__title-text {
+            color: #ffffff;
+        }
+
+        @media only screen and (min-width: 800px) {
+            #small-alert {
+                display: none;
+            }
+        }
+    </style>
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+</body>
+
+</html>
